@@ -1,6 +1,3 @@
-// Author @patriciogv - 2015
-// http://patriciogonzalezvivo.com
-
 #ifdef GL_ES
 precision mediump float;
 #endif
@@ -20,10 +17,7 @@ int circle(vec2 pos, vec2 centre, float radius) {
 void main(){
     vec2 st = gl_FragCoord.xy/u_resolution;
 
-    vec3 color = vec3(1.); //   vec3(circle(st, vec2(.4, .5), .2));
-
-    //color *= vec3(smoothcircle(st, vec2(.25, .3), .2));
-    //color *= vec3(smoothcircle(st, vec2(.25, .7), .2));
+    vec3 color = vec3(1.);
 
     float angle = u_time * 3.141592653;
     float rad = 0.2;
